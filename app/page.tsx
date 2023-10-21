@@ -5,11 +5,14 @@ import List from '../components/List'
 import Description from '../components/Description'
 
 function Home() {
+  let showDescription=true;
+
+
   return (
     <main className={styles.main1}>
       <p>Hello React!</p>
       <Header text='Header component' textSub='hi' />
-      <Description />
+      {showDescription && <Description />}
       <List description="This is a description"/>
     </main>
   )
